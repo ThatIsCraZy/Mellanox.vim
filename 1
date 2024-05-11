@@ -40,17 +40,17 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 syn match   mellanoxProtocol   /\smlag\-[\-a-z]\+/
 
 syn keyword mellanoxState     any deny permit accept reject discard disable enable no 
-syn keyword mellanoxState  prefer active passive
+syn keyword mellanoxState  prefer active passive fast
 syn keyword mellanoxAction     shutdown force
 
 
-syn keyword mellanox2ndParameter  switchport
+syn keyword mellanox2ndParameter  switchport lacp-individual speed
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby hybrid
 syn keyword mellanoxConfigure  edge
 syn keyword mellanoxConfigure  full-duplex automatic auto-negotiation input output
-syn keyword mellanoxConfigure  link-mode port-mode speed queue
+syn keyword mellanoxConfigure  link-mode port-mode  queue
 syn match   mellanoxConfigure  /\s\d\+[gm]/
 
 syn keyword mellanoxFunction   redundancy-group screen policies flow zones vrf virtual-router
