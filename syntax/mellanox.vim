@@ -29,8 +29,7 @@ syn keyword mellanoxProtocol   ip ipv6 inet inet6 tcp udp
 syn keyword mellanoxProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql
 syn keyword mellanoxProtocol   ospf ospf3 rip ripng isis
 syn keyword mellanoxProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp lacp
-syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf
-syn keyword mellanoxProtocol   ethernet
+syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf mlag
 syn match   mellanoxProtocol   /[ie]\?bgp/
 syn match   mellanoxProtocol   /https\?/
 syn match   mellanoxProtocol   /\s802\.3ad\s/
@@ -40,7 +39,7 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 "  mlag-vig mlag-port-channel
 syn match   mellanoxProtocol   /\smlag\-[\-a-z]\+/
 
-syn keyword mellanoxAction     any deny permit accept reject discard disable enable
+syn keyword mellanoxAction     any deny permit accept reject discard disable enable shutdown
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby
@@ -69,7 +68,7 @@ syn match   mellanoxString     /\"[^"]*\"/
 syn keyword mellanoxVar        low high
 syn match   mellanoxVar        /\d\+/
 
-syn keyword mellanoxInterface  vme
+syn keyword mellanoxInterface  ethernet
 syn match   mellanoxInterface  /\(xe\|ge\|vcp\|gr\)\-[0-9]\+\/[0-9]\+\/[0-9]\+\(\|\n\|\s\|\.[0-9]\+\)/
 syn match   mellanoxInterface  /\(ae\|reth\|fab\|vcp\|lo\)[0-9]\+\(\|\n\|\s\|\.[0-9]\+\)/
 syn match   mellanoxInterface  /virtual\-chassis/
