@@ -44,7 +44,7 @@ syn keyword mellanoxAction     shutdown
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby hybrid
-syc keyword mellanoxConfigure  edge
+syn keyword mellanoxConfigure  edge
 syn keyword mellanoxConfigure  full-duplex automatic auto-negotiation input output
 syn keyword mellanoxConfigure  prefer active passive
 syn keyword mellanoxConfigure  link-mode port-mode speed queue
