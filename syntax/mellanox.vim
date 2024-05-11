@@ -48,7 +48,7 @@ syn keyword mellanox2ndParameter  switchport lacp-individual speed ipl dcb
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= spanning-tree/
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= lacp /
 
-syn keyword mellanoxCommandRefine   mode allowed-vlan rate
+syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address
 syn keyword mellanoxProtocol mlag mlag-vip clock
 syn match   mellanoxCommandRefine  /port type/
 
