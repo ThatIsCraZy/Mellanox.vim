@@ -40,7 +40,7 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 syn match   mellanoxInterface   /\smlag\-[\-a-z]\+/
 
 syn keyword mellanoxState     any deny permit accept reject discard disable enable no 
-syn keyword mellanoxState  prefer active passive fast on
+syn keyword mellanoxState  prefer active passive on
 syn keyword mellanoxAction     shutdown force
 
 
@@ -64,7 +64,7 @@ syn keyword mellanoxProtocol mlag mlag-vip clock lacp
 syn match   mellanoxCommandRefine  /port type/
 
 syn keyword mellanoxConfigure  set delete rename insert request show
-syn keyword mellanoxPortType  trunk access static track standby hybrid
+syn keyword mellanoxPortType  trunk access static track standby hybrid fast 
 syn keyword mellanoxConfigure  edge
 syn keyword mellanoxConfigure  full-duplex automatic auto-negotiation input output
 syn keyword mellanoxConfigure  link-mode port-mode  queue
