@@ -37,7 +37,7 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 
 " mellanox mlag like follows:
 "  mlag-vig mlag-port-channel
-syn match   mellanoxProtocol   /\smlag\-[\-a-z]\+/
+syn match   mellanoxInterface   /\smlag\-[\-a-z]\+/
 
 syn keyword mellanoxState     any deny permit accept reject discard disable enable no 
 syn keyword mellanoxState  prefer active passive fast
@@ -45,7 +45,7 @@ syn keyword mellanoxAction     shutdown force
 
 
 syn keyword mellanox2ndParameter  switchport lacp-individual  speed
-syn keyword mellanoxCommandRefine   mode allowed-vlan 
+syn keyword mellanoxCommandRefine   mode allowed-vlan rate type
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby hybrid
