@@ -43,7 +43,8 @@ syn keyword mellanoxAction     any deny permit accept reject discard disable ena
 syn keyword mellanoxAction     shutdown 
 
 syn keyword mellanoxConfigure  set delete rename insert request show
-syn keyword mellanoxConfigure  trunk access static track standby
+syn keyword mellanoxConfigure  trunk access static track standby hybrid
+syc keyword mellanoxConfigure  edge
 syn keyword mellanoxConfigure  full-duplex automatic auto-negotiation input output
 syn keyword mellanoxConfigure  prefer active passive
 syn keyword mellanoxConfigure  link-mode port-mode speed queue
@@ -54,6 +55,7 @@ syn keyword mellanoxFunction   id host host-name priority weight port protocol
 syn keyword mellanoxFunction   source-address destination-address source-port destination-port
 syn keyword mellanoxFunction   import export source destination
 syn keyword mellanoxFunction   primary secondary neighbor
+syn keyword mellanoxFunction   mode
 syn match   mellanoxFunction   /groups\?/
 syn match   mellanoxFunction   /protocols\?/
 syn match   mellanoxFunction   /unit\s[0-9]\+/
@@ -61,6 +63,7 @@ syn match   mellanoxFunction   /vlan\.[0-9]\+/
 syn match   mellanoxFunction   /node[0-9]\+/
 
 syn match   mellanoxComment    /description.*$/
+syn keyword mellanoxComment name
 syn match   mellanoxComment    /\s*#.*$/
 syn region  mellanoxComment    contained start='/*' end='*/'
 
@@ -70,6 +73,7 @@ syn keyword mellanoxVar        low high
 syn match   mellanoxVar        /\d\+/
 
 syn keyword mellanoxInterface  ethernet
+syn keyword mellanoxInterface all
 syn match   mellanoxInterface  /\(xe\|ge\|vcp\|gr\)\-[0-9]\+\/[0-9]\+\/[0-9]\+\(\|\n\|\s\|\.[0-9]\+\)/
 syn match   mellanoxInterface  /\(ae\|reth\|fab\|vcp\|lo\)[0-9]\+\(\|\n\|\s\|\.[0-9]\+\)/
 syn match   mellanoxInterface  /virtual\-chassis/
