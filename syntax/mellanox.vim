@@ -44,8 +44,9 @@ syn keyword mellanoxState  prefer active passive fast
 syn keyword mellanoxAction     shutdown force
 
 
-syn keyword mellanox2ndParameter  switchport lacp-individual  speed
-syn keyword mellanoxCommandRefine   mode allowed-vlan rate type
+syn keyword mellanox2ndParameter  switchport lacp-individual speed
+syn keyword mellanoxCommandRefine   mode allowed-vlan rate
+syn match   mellanoxCommandRefine  /port type/
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby hybrid
@@ -55,7 +56,7 @@ syn keyword mellanoxConfigure  link-mode port-mode  queue
 syn match   mellanoxConfigure  /\s\d\+[gm]/
 
 syn keyword mellanoxFunction   redundancy-group screen policies flow zones vrf virtual-router
-syn keyword mellanoxFunction   id host hostname priority weight port protocol
+syn keyword mellanoxFunction   id host hostname priority weight protocol
 syn keyword mellanoxFunction   source-address destination-address source-port destination-port
 syn keyword mellanoxFunction   import export source destination
 syn keyword mellanoxFunction   primary secondary neighbor
