@@ -47,6 +47,7 @@ syn keyword mellanoxAction     shutdown force
 syn keyword mellanox2ndParameter  switchport 
 syn match mellanox2ndParameter   / lacp-individual /
 syn match mellanox2ndParameter   / channel-group /
+syn match mellanox2ndParameter   / mlag-channel-group /
 syn keyword mellanox2ndParameter  speed ipl dcb
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= spanning-tree/
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= lacp /
