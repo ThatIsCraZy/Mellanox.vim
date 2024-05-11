@@ -30,10 +30,12 @@ syn keyword mellanoxProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql
 syn keyword mellanoxProtocol   ospf ospf3 rip ripng isis
 syn keyword mellanoxProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp lacp
 syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf
+syn keyword mellanoxProtocol   ethernet
 syn match   mellanoxProtocol   /[ie]\?bgp/
 syn match   mellanoxProtocol   /https\?/
 syn match   mellanoxProtocol   /\s802\.3ad\s/
 syn match   mellanoxProtocol   /\s802\.1Q\s/
+
 " mellanox mlag like follows:
 "  mlag-vig mlag-port-channel
 syn match   mellanoxProtocol   /\smlag\-[\-a-z]\+/
