@@ -44,10 +44,11 @@ syn keyword mellanoxState  prefer active passive fast on
 syn keyword mellanoxAction     shutdown force
 
 
-syn keyword mellanox2ndParameter  switchport lacp-individual speed ipl dcb
+syn keyword mellanox2ndParameter  switchport lacp-individual
+syn keyword mellanox2ndParameter  speed ipl dcb
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= spanning-tree/
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= lacp/
-syn match   mellanoxVar           /\(name\)\@<= .*/
+syn match   mellanoxVar           /\(name\)\@<=.*/
 
 syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address
 syn keyword mellanoxProtocol mlag mlag-vip clock
