@@ -86,10 +86,10 @@ syn match   mellanoxIpv4       /\(25[0-5]\|2[0-4]\d\|[01]\?\d\{1,2}\)\(\.\(25[0-
 
 
 hi link mellanoxKeyword        Statement
-hi link mellanoxInterface      Underlined
 hi link mellanoxIpv4           Underlined
 hi link mellanoxProtocol       Type
 hi link mellanoxAction         Error
+hi link mellanoxInterface      Function
 hi link mellanoxFunction       Function
 hi link mellanoxConfigure      Function
 hi link mellanoxLabel          Identifier
