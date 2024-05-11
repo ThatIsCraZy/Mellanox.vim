@@ -59,7 +59,7 @@ syn match   mellanoxComment    /description/
 syn match   mellanoxVar           /\(description\)\@<=.*/
 
 
-syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address except add
+syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address except add priority-flow-control 
 syn keyword mellanoxProtocol mlag mlag-vip clock lacp
 syn match   mellanoxCommandRefine  /port type/
 
