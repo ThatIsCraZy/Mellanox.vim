@@ -59,7 +59,7 @@ syn match   mellanoxComment    /description/
 syn match   mellanoxVar           /\(description\)\@<=.*/
 
 
-syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address except
+syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address except add
 syn keyword mellanoxProtocol mlag mlag-vip clock lacp
 syn match   mellanoxCommandRefine  /port type/
 
@@ -100,7 +100,7 @@ syn match   mellanoxIpv4       /\(25[0-5]\|2[0-4]\d\|[01]\?\d\{1,2}\)\(\.\(25[0-
 
 
 hi link mellanoxKeyword        Statement
-hi link mellanoxIpv4           Underlined
+hi link mellanoxIpv4           Title
 hi link mellanoxProtocol       Type
 hi link mellanoxAction         Error
 hi link mellanoxInterface      Function
