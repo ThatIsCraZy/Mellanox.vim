@@ -49,7 +49,13 @@ syn match mellanox2ndParameter   / lacp-individual /
 syn keyword mellanox2ndParameter  speed ipl dcb
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= spanning-tree/
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= lacp /
+
+syn match   mellanoxComment    /name/
 syn match   mellanoxVar           /\(name\)\@<=.*/
+
+syn match   mellanoxComment    /description/
+syn match   mellanoxVar           /\(description\)\@<=.*/
+
 
 syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address
 syn keyword mellanoxProtocol mlag mlag-vip clock
@@ -73,8 +79,6 @@ syn match   mellanoxFunction   /unit\s[0-9]\+/
 syn match   mellanoxFunction   /vlan\.[0-9]\+/
 syn match   mellanoxFunction   /node[0-9]\+/
 
-syn match   mellanoxComment    /description.*$/
-syn match   mellanoxComment    /name/
 syn match   mellanoxComment    /\s*#.*$/
 syn region  mellanoxComment    contained start='/*' end='*/'
 
