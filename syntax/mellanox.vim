@@ -28,7 +28,7 @@ syn match   mellanoxKeyword    /applications\?/
 syn keyword mellanoxProtocol   ip ipv6 inet inet6 tcp udp
 syn keyword mellanoxProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql
 syn keyword mellanoxProtocol   ospf ospf3 rip ripng isis
-syn keyword mellanoxProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp lacp
+syn keyword mellanoxProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp 
 syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf
 syn match   mellanoxProtocol   /[ie]\?bgp/
 syn match   mellanoxProtocol   /https\?/
@@ -40,15 +40,16 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 syn match   mellanoxInterface   /\smlag\-[\-a-z]\+/
 
 syn keyword mellanoxState     any deny permit accept reject discard disable enable no 
-syn keyword mellanoxState  prefer active passive fast
+syn keyword mellanoxState  prefer active passive fast on
 syn keyword mellanoxAction     shutdown force
 
 
-syn keyword mellanox2ndParameter  switchport lacp-individual speed
+syn keyword mellanox2ndParameter  switchport lacp-individual speed ipl dcb
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= spanning-tree/
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= lacp /
 
 syn keyword mellanoxCommandRefine   mode allowed-vlan rate
+syn keyword mellanoxProtocol mlag mlag-vig clock
 syn match   mellanoxCommandRefine  /port type/
 
 syn keyword mellanoxConfigure  set delete rename insert request show
@@ -79,7 +80,7 @@ syn match   mellanoxString     /\"[^"]*\"/
 syn keyword mellanoxVar        low high all
 syn match   mellanoxVar        /\d\+/
 
-syn keyword mellanoxInterface  ethernet
+syn keyword mellanoxInterface  ethernet timezone system-mac port-channel
 syn match   mellanoxInterface  /\(xe\|ge\|vcp\|gr\)\-[0-9]\+\/[0-9]\+\/[0-9]\+\(\|\n\|\s\|\.[0-9]\+\)/
 syn match   mellanoxInterface  /\(ae\|reth\|fab\|vcp\|lo\)[0-9]\+\(\|\n\|\s\|\.[0-9]\+\)/
 syn match   mellanoxInterface  /virtual\-chassis/
