@@ -39,8 +39,10 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 "  mlag-vig mlag-port-channel
 syn match   mellanoxProtocol   /\smlag\-[\-a-z]\+/
 
-syn keyword mellanoxAction     any deny permit accept reject discard disable enable 
+syn keyword mellanoxState     any deny permit accept reject discard disable enable 
 syn keyword mellanoxAction     shutdown 
+
+
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby hybrid
@@ -51,7 +53,7 @@ syn keyword mellanoxConfigure  link-mode port-mode speed queue
 syn match   mellanoxConfigure  /\s\d\+[gm]/
 
 syn keyword mellanoxFunction   redundancy-group screen policies flow zones vrf virtual-router
-syn keyword mellanoxFunction   id host host-name priority weight port protocol
+syn keyword mellanoxFunction   id host hostname priority weight port protocol
 syn keyword mellanoxFunction   source-address destination-address source-port destination-port
 syn keyword mellanoxFunction   import export source destination
 syn keyword mellanoxFunction   primary secondary neighbor
@@ -96,5 +98,8 @@ hi link mellanoxVar            String
 hi link mellanoxConfigure      Function
 hi link mellanoxDef            String
 hi link mellanoxIpv4           Underlined
+hi link mellanoxState          Boolean
+
+
 
 let b:current_syntax = "mellanox"
