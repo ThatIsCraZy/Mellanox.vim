@@ -26,7 +26,7 @@ syn match   mellanoxKeyword    /members\?/
 syn match   mellanoxKeyword    /applications\?/
 
 syn keyword mellanoxProtocol   ip ipv6 inet inet6 tcp udp
-syn keyword mellanoxProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql
+syn keyword mellanoxProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql spanning-tree
 syn keyword mellanoxProtocol   ospf ospf3 rip ripng isis
 syn keyword mellanoxProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp 
 syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf
