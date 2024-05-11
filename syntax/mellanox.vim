@@ -64,8 +64,7 @@ syn keyword mellanoxProtocol mlag mlag-vip clock lacp
 syn match   mellanoxCommandRefine  /port type/
 
 syn keyword mellanoxConfigure  set delete rename insert request show
-syn keyword mellanoxPortType  trunk access static track standby hybrid fast 
-syn keyword mellanoxConfigure  edge
+syn keyword mellanoxPortType  trunk access static track standby hybrid fast edge
 syn keyword mellanoxConfigure  full-duplex automatic auto-negotiation input output
 syn keyword mellanoxConfigure  link-mode port-mode  queue
 syn match   mellanoxConfigure  /\s\d\+[gm]/
