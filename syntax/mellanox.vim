@@ -59,12 +59,12 @@ syn match   mellanoxComment    /description/
 syn match   mellanoxVar           /\(description\)\@<=.*/
 
 
-syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address except add priority-flow-control 
+syn keyword mellanoxCommandRefine   mode allowed-vlan rate peer-address except add priority-flow-control
 syn keyword mellanoxProtocol mlag mlag-vip clock lacp
 syn match   mellanoxCommandRefine  /port type/
 
 syn keyword mellanoxConfigure  set delete rename insert request show
-syn keyword mellanoxConfigure  trunk access static track standby hybrid
+syn keyword mellanoxPortType  trunk access static track standby hybrid
 syn keyword mellanoxConfigure  edge
 syn keyword mellanoxConfigure  full-duplex automatic auto-negotiation input output
 syn keyword mellanoxConfigure  link-mode port-mode  queue
@@ -101,6 +101,7 @@ syn match   mellanoxIpv4       /\(25[0-5]\|2[0-4]\d\|[01]\?\d\{1,2}\)\(\.\(25[0-
 
 hi link mellanoxKeyword        Statement
 hi link mellanoxIpv4           NotifyTRACEIcon
+hi link mellanoxPortType           NotifyTRACEIcon
 hi link mellanoxProtocol       Type
 hi link mellanoxAction         Error
 hi link mellanoxInterface      Function
