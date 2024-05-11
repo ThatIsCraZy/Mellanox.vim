@@ -74,7 +74,7 @@ syn match   mellanoxFunction   /vlan\.[0-9]\+/
 syn match   mellanoxFunction   /node[0-9]\+/
 
 syn match   mellanoxComment    /description.*$/
-syn match   mellanoxComment    /name /
+syn match   mellanoxComment    /name/
 syn match   mellanoxComment    /\s*#.*$/
 syn region  mellanoxComment    contained start='/*' end='*/'
 
