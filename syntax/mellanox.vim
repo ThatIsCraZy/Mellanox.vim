@@ -29,7 +29,7 @@ syn keyword mellanoxProtocol   ip ipv6 inet inet6 tcp udp
 syn keyword mellanoxProtocol   snmp snmptrap ntp syslog ssh ftp ftp-data dns sql
 syn keyword mellanoxProtocol   ospf ospf3 rip ripng isis
 syn keyword mellanoxProtocol   igmp igmp-snooping lldp lldp-med mld mld-snooping msdp mstp mvrp mpls vpls vrrp lacp
-syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf mlag
+syn keyword mellanoxProtocol   stp sflow vstp dot1x msrp msrpc sunrpc icmp ping pim rstp rsvp netconf
 syn match   mellanoxProtocol   /[ie]\?bgp/
 syn match   mellanoxProtocol   /https\?/
 syn match   mellanoxProtocol   /\s802\.3ad\s/
@@ -39,7 +39,8 @@ syn match   mellanoxProtocol   /\s802\.1Q\s/
 "  mlag-vig mlag-port-channel
 syn match   mellanoxProtocol   /\smlag\-[\-a-z]\+/
 
-syn keyword mellanoxAction     any deny permit accept reject discard disable enable shutdown
+syn keyword mellanoxAction     any deny permit accept reject discard disable enable 
+syn keyword mellanoxAction     shutdown 
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby
