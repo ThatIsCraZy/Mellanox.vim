@@ -47,7 +47,7 @@ syn keyword mellanoxAction     shutdown force
 syn keyword mellanox2ndParameter  switchport lacp-individual speed
 syn keyword mellanoxCommandRefine   mode allowed-vlan rate
 syn match   mellanoxCommandRefine  /port type/
-syn match   mellanoxCommandRefine  (\([0-9]\)\@<= spanning-tree
+syn match   mellanoxCommandRefine  /(\([0-9]\)\@<= spanning-tree/
 
 syn keyword mellanoxConfigure  set delete rename insert request show
 syn keyword mellanoxConfigure  trunk access static track standby hybrid
