@@ -80,7 +80,6 @@ syn match   mellanoxFunction   /unit\s[0-9]\+/
 syn match   mellanoxFunction   /vlan\.[0-9]\+/
 syn match   mellanoxFunction   /node[0-9]\+/
 
-syn match   mellanoxComment    /\s*#.*$/
 syn region  mellanoxComment    contained start='/*' end='*/'
 
 syn match   mellanoxString     /\"[^"]*\"/
