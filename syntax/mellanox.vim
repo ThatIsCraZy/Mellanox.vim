@@ -52,7 +52,7 @@ syn keyword mellanox2ndParameter  speed ipl dcb
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= spanning-tree/
 syn match   mellanox2ndParameter  /\([0-9]\)\@<= lacp /
 
-syn match   mellanoxComment    /name/
+syn match   mellanoxComment    / name /
 syn match   mellanoxVar           /\(name\)\@<=.*/
 
 syn match   mellanoxComment    /description/
